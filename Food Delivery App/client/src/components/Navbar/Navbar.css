@@ -1,0 +1,47 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px;
+  color: rgb(43, 250, 15);
+}
+
+.logoname {
+    display: flex;
+  width: 150px;
+  padding-right: 50px;
+  font-size: 50px;
+}
+
+.nav-bar {
+  display: flex;
+  font-size: 20px;
+  padding: 20px 15px;
+  align-items: center;
+  gap: 20px;
+}
+
+
+.signin{
+    background: transparent;
+    color: rgb(255, 0, 0);
+    border: 1px solid tomato;
+    padding: 10px 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.signin:hover{
+    background-color: aqua;
+}
+
+.navbar .active{
+    text-decoration: underline rgb(0, 255, 255);
+    background-color: rgb(5, 235, 243);
+    padding: 0px 30px;
+    color: rgb(2, 87, 2);
+}
+
+.navbar .nav-bar div{
+    cursor: pointer;
+    transition: 0.3s;
+}
