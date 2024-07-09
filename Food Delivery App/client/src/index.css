@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    background-color:white;
 }
 
 body{
@@ -14,4 +15,13 @@ a{
 .app{
     width: 90%;
     margin:auto
+}
+
+@keyframes fadein {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100;
+    }
 }
