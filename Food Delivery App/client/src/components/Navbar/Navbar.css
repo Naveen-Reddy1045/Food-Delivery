@@ -37,7 +37,7 @@
 .navbar .active{
     text-decoration: underline rgb(0, 255, 255);
     background-color: rgb(5, 235, 243);
-    padding: 0px 30px;
+    padding: 10px 30px;
     color: rgb(2, 87, 2);
 }
 
