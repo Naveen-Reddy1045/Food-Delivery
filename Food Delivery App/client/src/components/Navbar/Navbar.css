@@ -21,7 +21,7 @@
 }
 
 
-.signin{
+.signup {
     background: transparent;
     color: rgb(255, 0, 0);
     border: 1px solid tomato;
@@ -30,8 +30,21 @@
     transition: 0.3s;
 }
 
-.signin:hover{
+.signup:hover{
     background-color: aqua;
+}
+
+.login {
+  background: transparent;
+  color: rgb(255, 0, 0);
+  border: 1px solid tomato;
+  padding: 10px 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login:hover{
+  background-color: aqua;
 }
 
 .navbar .active{

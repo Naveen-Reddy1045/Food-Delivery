@@ -3,7 +3,9 @@ import './Login.css'
 
 const Login = () => {
   return (
-    <div className='login'></div>
+    <div className='login'>
+      Login
+    </div>
   )
 }
 
