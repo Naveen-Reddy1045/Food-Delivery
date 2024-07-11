@@ -14,7 +14,7 @@ const App = () => {
   const [signup,setsignup]=useState(false);
   return (
     <>
-    {login?<Login />:<></>}
+    {login?<Login setlogin={setlogin}/>:<></>}
     {/* {!signup?<Signup />:<></>} */}
       <div className='app'>
 
@@ -23,7 +23,7 @@ const App = () => {
           <Route path='/' element={<Home />} />
           <Route path='/cart' element={<Cart />} />
           <Route path='/order' element={<Placeholder />} />
-          <Route path='/help' element={<Help />} />
+          {/* <Route path='/help' element={<Help />} /> */}
         </Routes>
 
 

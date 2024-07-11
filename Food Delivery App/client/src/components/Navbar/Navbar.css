@@ -21,7 +21,7 @@
 }
 
 
-.signup {
+/* .signup {
     background: transparent;
     color: rgb(255, 0, 0);
     border: 1px solid tomato;
@@ -32,18 +32,18 @@
 
 .signup:hover{
     background-color: aqua;
-}
+} */
 
-.login {
+.log-in {
   background: transparent;
-  color: rgb(255, 0, 0);
-  border: 1px solid tomato;
+  color: rgb(0, 110, 255);
+  border: 1px solid rgb(21, 14, 13);
   padding: 10px 30px;
   cursor: pointer;
   transition: 0.3s;
 }
 
-.login:hover{
+.log-in:hover{
   background-color: aqua;
 }
 
