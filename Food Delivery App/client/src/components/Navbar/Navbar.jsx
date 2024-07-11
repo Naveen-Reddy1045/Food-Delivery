@@ -20,7 +20,7 @@ const Navbar = ({setlogin,setsignup}) => {
             </div>
             
         </div>
-    )
+    ) 
 }
 
 export default Navbar

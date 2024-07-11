@@ -2,14 +2,16 @@
   display: flex;
   justify-content: space-between;
   padding: 0px 20px;
-  color: rgb(43, 250, 15);
+  color: rgb(15, 42, 250);
 }
 
 .logoname {
     display: flex;
   width: 150px;
   padding-right: 50px;
-  font-size: 50px;
+  padding-top: 10px;
+  font-size: 100px;
+  color: rgb(61,243,5);
 }
 
 .nav-bar {
@@ -44,12 +46,12 @@
 }
 
 .log-in:hover{
-  background-color: aqua;
+  background-color: rgb(64, 255, 0);
 }
 
 .navbar .active{
-    text-decoration: underline rgb(0, 255, 255);
-    background-color: rgb(5, 235, 243);
+    text-decoration: underline rgb(255, 42, 0);
+    background-color: rgb(61, 243, 5);
     padding: 10px 30px;
     color: rgb(2, 87, 2);
 }
