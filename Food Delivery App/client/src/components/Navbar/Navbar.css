@@ -21,7 +21,33 @@
   align-items: center;
   gap: 20px;
 }
+.navbar-profile{
+  position: relative;
+}
+.profile{
+  position: absolute;
+  display: none;
+  right: 0;
+  z-index: 1;
+}
+.navbar-profile:hover .profile {
+  display: flex;
+  flex-direction: column;
+  color: red;
+  background-color: white;
+  list-style: none;
+  border: 1px solid violet;
+  padding: 12px 20px;
+}
 
+.profile li{
+  align-items: center;
+  cursor: pointer;
+}
+
+.profile li:hover{
+  color: blue;
+}
 
 /* .signup {
     background: transparent;
