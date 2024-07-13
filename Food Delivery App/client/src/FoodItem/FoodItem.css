@@ -1,10 +1,11 @@
 .food-item {
-    padding: 0% 0% 5% 0%;
+    padding: 1% 0% 5% 0%;
     transition: 0.3s;
     animation: fadein 1s;
     width: 100%;
     border: 2px solid yellow;
-
+    margin: 3%;
+    
 }
 
 

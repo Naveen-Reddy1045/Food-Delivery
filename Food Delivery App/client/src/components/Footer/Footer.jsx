@@ -1,8 +1,15 @@
 import React from 'react'
 import './Footer.css'
 import { assets } from '../../assets/assets'
+import { useNavigate } from 'react-router-dom';
 
 const Footer = () => {
+  const navigate = useNavigate();
+
+  const goToHome = () => {
+    navigate('/');
+  };
+
   return (
     <div className='footer' id='footer'>
       <div className="footer-content">
@@ -22,7 +29,7 @@ const Footer = () => {
         <div className="footer-center">
           <h1>Ziggy</h1>
           <ul>
-            <li>Home</li>
+            <li onClick={goToHome}>Home</li>
             <li>About us</li>
             <li>Delivery</li>
             <li>Policy</li>
@@ -31,16 +38,16 @@ const Footer = () => {
 
         <div className="footer-right">
           <h2>Contact us</h2>
-          <ul>
-            <li>+1111 111 111</li>
-            <li>+8888 888 888</li>
-            <li>+9876 543 212</li>
-          </ul>
           <div className="social-icons">
             <img src={assets.facebook_icon} alt="" />
             <img src={assets.twitter_icon} alt="" />
             <img src={assets.linkedin_icon} alt="" />
           </div>
+          <ul>
+            <li>+91 9150995015</li>
+            <li>lokeshreddybolla7917@gmail.com</li>
+          </ul>
+          
         </div>
       </div>
     </div>

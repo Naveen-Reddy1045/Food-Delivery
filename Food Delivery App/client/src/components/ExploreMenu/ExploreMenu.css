@@ -7,10 +7,12 @@
 .explore-menu h1 {
     color: #14d60a;
     font-weight: 500;
+    font-size:3vw;
 }
 
 .explore-menu-text {
     max-width: 60%;
+    font-size: 2vw;
 }
 
 .explore-menu-list {
@@ -53,4 +55,8 @@
 
 .explore-menu hr {
     display: none;
+}
+
+@media (max-width:1050px) {
+    
 }

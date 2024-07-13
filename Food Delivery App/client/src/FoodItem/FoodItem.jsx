@@ -17,7 +17,7 @@ const FoodItem = ({ id, name, price, description, image }) => {
             <p>{cartitems[id]}</p>
             <img onClick={() => addtocart(id)} src={assets.add_icon_green} alt='' />
           </div>
-        }
+        } 
       </div>
       <div className="food-info">
         <div className="food-name-price">
