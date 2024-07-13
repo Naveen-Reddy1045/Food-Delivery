@@ -16,7 +16,7 @@ const Footer = () => {
             <li>Vishakapatnam</li>
             <li>Pune</li>
           </ul>
-          
+
         </div>
 
         <div className="footer-center">

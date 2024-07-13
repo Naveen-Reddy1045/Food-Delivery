@@ -1,28 +1,31 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background-color:white;
+    background-color: white;
     z-index: 1;
 }
 
-body{
+body {
     min-height: 100vh;
 }
-a{
+
+a {
     text-decoration: none;
     color: inherit;
 }
-.app{
+
+.app {
     width: 90%;
-    margin:auto
+    margin: auto
 }
 
 @keyframes fadein {
-    0%{
+    0% {
         opacity: 0;
     }
-    100%{
+
+    100% {
         opacity: 100;
     }
 }

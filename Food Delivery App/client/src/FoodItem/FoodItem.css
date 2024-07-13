@@ -1,15 +1,15 @@
 .food-item {
-    padding:  0% 0% 5% 0%;
+    padding: 0% 0% 5% 0%;
     transition: 0.3s;
     animation: fadein 1s;
     width: 100%;
     border: 2px solid yellow;
-    
+
 }
 
 
 .image {
-    
+
     margin-bottom: 2.5%;
     width: 100%;
     max-width: 100%;
@@ -44,7 +44,7 @@
     position: relative;
 }
 
-.food-item-img .add{
+.food-item-img .add {
     width: 40px;
     position: absolute;
     bottom: 5%;
@@ -53,7 +53,7 @@
     cursor: pointer;
 }
 
-.food-item-counter{
+.food-item-counter {
     width: 60px;
     display: flex;
     position: absolute;
@@ -63,6 +63,6 @@
     gap: 10px;
     padding: 6px;
     border-radius: 50px;
-    background-color:rgb(25, 241, 46);
+    background-color: rgb(25, 241, 46);
     box-sizing: border-box;
 }

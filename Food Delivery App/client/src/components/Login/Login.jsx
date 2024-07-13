@@ -6,35 +6,35 @@ import axios from 'axios';
 
 const Login = ({ setlogin }) => {
   const [currentstate, setcurrentstate] = useState("Sign Up");
-  const {url,token,settoken}=useContext(Storecontext);
+  const { url, token, settoken } = useContext(Storecontext);
 
-  const [data,setdata] = useState({
-    name:"",
-    email:"",
-    password:""
+  const [data, setdata] = useState({
+    name: "",
+    email: "",
+    password: ""
   })
 
-  const onchangehandler=(event)=>{
-    const {name,value}=event.target;
-    setdata(data=>({...data,[name]:value}))
+  const onchangehandler = (event) => {
+    const { name, value } = event.target;
+    setdata(data => ({ ...data, [name]: value }))
   }
 
-  const onlogin=async(event)=>{
+  const onlogin = async (event) => {
     event.preventDefault();
-    let newurl=url;
-    if(currentstate==="Login"){
-      newurl+="/api/user/login"
-    }else{
-      newurl+="/api/user/register"
+    let newurl = url;
+    if (currentstate === "Login") {
+      newurl += "/api/user/login"
+    } else {
+      newurl += "/api/user/register"
     }
 
-    const response=await axios.post(newurl,data);
+    const response = await axios.post(newurl, data);
 
-    if(response.data.success){
+    if (response.data.success) {
       settoken(response.data.token);
-      localStorage.setItem("token",response.data.token)
+      localStorage.setItem("token", response.data.token)
       setlogin(false)
-    }else{
+    } else {
       alert(response.data.message)
     }
 
@@ -53,15 +53,15 @@ const Login = ({ setlogin }) => {
           <input type='email' name='email' placeholder='Enter Your Email' onChange={onchangehandler} value={data.email} required />
           <input type='password' name='password' placeholder='Enter Password' onChange={onchangehandler} value={data.password} required />
         </div>
-        
+
         <div className="conditions">
           <input type='checkbox' required />
           <p className='pp'>I agree all conditions.</p>
         </div>
         <button className='butt' type='submit'>{currentstate === "Sign Up" ? "Create Account" : "Login"}</button>
         {currentstate === "Login" ?
-        <div className='divv'>Don't have an account? <span onClick={()=>setcurrentstate("Sign Up")}>click here</span></div>
-      : <div className='divv'>Already have an account?<span onClick={()=>setcurrentstate("Login")}>Login here</span></div>}
+          <div className='divv'>Don't have an account? <span onClick={() => setcurrentstate("Sign Up")}>click here</span></div>
+          : <div className='divv'>Already have an account?<span onClick={() => setcurrentstate("Login")}>Login here</span></div>}
       </form>
     </div>
   )

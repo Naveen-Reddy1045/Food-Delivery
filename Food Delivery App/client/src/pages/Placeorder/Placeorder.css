@@ -1,31 +1,35 @@
-.place-order{
+.place-order {
     display: flex;
     align-items: start;
     justify-content: space-between;
     gap: 50px;
     margin-top: 100px;
-    padding:0% 15%;
+    padding: 0% 15%;
 
 }
-.place-order-left{
+
+.place-order-left {
     width: 100%;
-    max-width: max(30%,500px);
+    max-width: max(30%, 500px);
     padding-left: 3%;
     padding-bottom: 10%;
 }
-.place-order-right{
+
+.place-order-right {
     width: 100%;
-    max-width: max(40%,500px);
+    max-width: max(40%, 500px);
     padding-left: 3%;
     padding-bottom: 10%;
 }
-.place-order-left .title{
+
+.place-order-left .title {
     font-size: 40px;
     font-weight: 600;
     margin-bottom: 50px;
     color: red;
 }
-.place-order-left input{
+
+.place-order-left input {
     margin-bottom: 15px;
     width: 100%;
     padding: 10px;
@@ -33,11 +37,13 @@
     border-radius: 4px;
     outline-color: blueviolet;
 }
-.place-order-left .details{
+
+.place-order-left .details {
     display: flex;
     gap: 15px;
 }
-.place-order-right button{
+
+.place-order-right button {
     margin-top: 30px;
     padding: 2% 10%;
     background-color: yellow;

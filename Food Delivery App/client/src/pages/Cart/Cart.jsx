@@ -4,8 +4,8 @@ import { Storecontext } from '../../context/Storecontext'
 import { useNavigate } from 'react-router-dom';
 
 const Cart = () => {
-  const { cartitems, food_list, removefromcart,gettotal,url } = useContext(Storecontext);
-  const navigate=useNavigate();
+  const { cartitems, food_list, removefromcart, gettotal, url } = useContext(Storecontext);
+  const navigate = useNavigate();
 
   return (
     <div className='cart'>
@@ -24,7 +24,7 @@ const Cart = () => {
           if (cartitems[item._id] > 0) {
             return (
               <div className='cart-items-title each-cart-item'>
-                <img src={url+"/images/"+item.image} alt='' />
+                <img src={url + "/images/" + item.image} alt='' />
                 <p>{item.name}</p>
                 <p>Rs.{item.price}</p>
                 <p>{cartitems[item._id]}</p>
@@ -37,26 +37,26 @@ const Cart = () => {
       </div>
       <br />
       <div className="cart-bottom">
-      <div className="cart-total-details">
-        <h2>Total Value</h2>
-        <div>
-          <div className="total-cart">
-            <p>Cart Total</p>
-            <p>Rs. {gettotal()>0?gettotal():0}</p>
+        <div className="cart-total-details">
+          <h2>Total Value</h2>
+          <div>
+            <div className="total-cart">
+              <p>Cart Total</p>
+              <p>Rs. {gettotal() > 0 ? gettotal() : 0}</p>
+            </div>
+            <div className="total-cart">
+              <p>Delivery Charges</p>
+              <p>Rs. {gettotal() > 0 ? gettotal() / 20 : 0}</p>
+            </div>
+            <hr />
+            <div className="total-cart">
+              <p>Total Amount</p>
+              <p>Rs. {gettotal() > 0 ? gettotal() + gettotal() / 20 : 0}</p>
+            </div>
+
           </div>
-          <div className="total-cart">
-            <p>Delivery Charges</p>
-            <p>Rs. {gettotal()>0?gettotal()/20:0}</p>
-          </div>
-          <hr />
-          <div className="total-cart">
-            <p>Total Amount</p>
-            <p>Rs. {gettotal()>0?gettotal()+gettotal()/20:0}</p>
-          </div>
-          
+          <button onClick={() => { navigate('/order') }}>Proceed to payment</button>
         </div>
-        <button onClick={()=>{navigate('/order')}}>Proceed to payment</button>
-      </div>
       </div>
     </div>
 

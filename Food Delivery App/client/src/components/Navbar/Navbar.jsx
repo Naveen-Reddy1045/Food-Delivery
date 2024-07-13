@@ -22,7 +22,6 @@ const Navbar = ({setlogin,setsignup}) => {
             <div className='nav-bar'>
                 <Link to='/' onClick={()=>setmenu("home")} className={menu==="home"?"active":""}>Home</Link>
                 <a href='#explore-menu' onClick={()=>setmenu("Menu")} className={menu==="Menu"?"active":""}>Menu</a>
-                <a href='#' onClick={()=>setmenu("getapp")} className={menu==="getapp"?"active":""}>Get App</a>
                 <a href='#footer' onClick={()=>setmenu("aboutus")} className={menu==="aboutus"?"active":""}>About us</a>
                 <Link to='/cart' onClick={()=>setmenu("cart")} className={(menu==="cart"?"active":"")||(gettotal===0?"":"dot")}>Cart</Link>
                 {/* <button onClick={()=>setsignup(true)}  className='signup'>Sign Up</button> */}

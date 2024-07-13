@@ -15,37 +15,44 @@
     max-width: 50%;
     bottom: 10%;
     left: 6vw;
-    z-index: 1; /* Ensure this is above the background image */
+    z-index: 1;
     animation: fadein 3s;
+    background-color: rgba(26, 255, 0, 0.905);
 }
 
-.header-contents h2, 
-.header-contents p, 
-.header-contents button {
-    background-color: rgba(26, 255, 0, 0.905); /* Semi-transparent background */
-    color: rgb(5, 16, 224); /* Text color */
-    margin: 0; /* Reset margin */
-    border: none; /* Remove border from button */
-    text-align: left; /* Align text to the left */
+.header-contents h2,
+.header-contents p,
+.header-contents a {
+    background-color: rgba(26, 255, 0, 0.905);
+    color: rgb(5, 16, 224);
+    margin: 0;
+    border: none;
+    text-align: left;
 }
 
 .header-contents h2 {
     font-weight: 500;
     font-size: max(3.5vw, 20px);
-    color:white;
+    color: white;
 }
 
-.header-contents p{
+.header-contents p {
     color: black;
     font-size: 1.5vw;
 }
 
-.header-contents button {
+.header-contents a {
     border: none;
     cursor: pointer;
-    background-color: rgba(68, 255, 0, 0.905); /* Ensure button has the same background */
     color: rgb(21, 5, 243);
     padding: 10px 20px;
-    border-radius: 10px; /* Rounded corners */
-    font-size: max(1vw,13px);
+    border-radius: 10px;
+    font-size: max(1.5vw, 13px);
+    background-color: aqua;
+}
+
+.buttons {
+    display: flex;
+    background-color: rgba(26, 255, 0, 0.905);
+    gap: 20px;
 }

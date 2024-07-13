@@ -10,12 +10,12 @@ import Login from './components/Login/Login'
 import Signup from './components/Signup/Signup'
 
 const App = () => {
-  const [login,setlogin]=useState(false);
-  const [signup,setsignup]=useState(false);
+  const [login, setlogin] = useState(false);
+  const [signup, setsignup] = useState(false);
   return (
     <>
-    {login?<Login setlogin={setlogin}/>:<></>}
-    {/* {!signup?<Signup />:<></>} */}
+      {login ? <Login setlogin={setlogin} /> : <></>}
+      {/* {!signup?<Signup />:<></>} */}
       <div className='app'>
 
         <Navbar setlogin={setlogin} />
