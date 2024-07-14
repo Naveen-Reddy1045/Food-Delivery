@@ -8,6 +8,7 @@ import Help from './pages/Help/Help'
 import Footer from './components/Footer/Footer'
 import Login from './components/Login/Login'
 import Signup from './components/Signup/Signup'
+import Userorder from './pages/Userorder/Userorder.jsx'
 
 const App = () => {
   const [login, setlogin] = useState(false);
@@ -23,6 +24,7 @@ const App = () => {
           <Route path='/' element={<Home />} />
           <Route path='/cart' element={<Cart />} />
           <Route path='/order' element={<Placeholder />} />
+          <Route path='/userorders' element={<Userorder />} />
           {/* <Route path='/help' element={<Help />} /> */}
         </Routes>
 

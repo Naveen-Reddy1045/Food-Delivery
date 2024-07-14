@@ -5,6 +5,7 @@ import userrouter from "./routes/userroute.js";
 import 'dotenv/config'
 import foodrouter from "./routes/foodroute.js";
 import cartrouter from "./routes/cartroute.js";
+import orderrouter from "./routes/orderroute.js";
 
 const app = express()
 const port = 5000
@@ -18,6 +19,7 @@ app.use("/api/food", foodrouter)
 app.use("/images", express.static('uploads'))
 app.use("/api/user", userrouter)
 app.use("/api/cart", cartrouter);
+app.use("/api/order", orderrouter);
 
 app.get('/', (req, res) => {
     res.send("Hi,Server is running");
