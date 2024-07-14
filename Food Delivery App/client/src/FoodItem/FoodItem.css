@@ -28,16 +28,16 @@
 }
 
 .food-name {
-    font-size: 2vw;
+    font-size: x-large;
     font-weight: 500;
 }
 
 .food-description {
-    font-size: 1.25vw;
+    font-size: large;
 }
 
 .food-price {
-    font-size: 2vw;
+    font-size: x-large;
     color: rgb(255, 8, 8);
 }
 
@@ -66,4 +66,14 @@
     border-radius: 50px;
     background-color: rgb(25, 241, 46);
     box-sizing: border-box;
+}
+
+@media (max-width:900px) {
+    .food-name-price{
+        display: flex;
+        flex-direction: column;
+    }
+    .food-name,.food-price,.food-description{
+        font-size: larger;
+    }
 }
