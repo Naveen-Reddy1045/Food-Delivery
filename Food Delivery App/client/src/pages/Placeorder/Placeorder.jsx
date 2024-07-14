@@ -3,6 +3,7 @@ import './Placeorder.css'
 import { Storecontext } from '../../context/Storecontext'
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom'
+import { toast } from 'react-toastify';
 
 const Placeorder = () => {
   const { gettotal, token, url, food_list, cartitems } = useContext(Storecontext);
@@ -43,7 +44,9 @@ const Placeorder = () => {
       }
       let res = await axios.post(url + "/api/order/place", orderdata, { headers: { token } });
       if (res.data.success) {
+        toast.success(res.data.message);
         navigate('/userorders');
+        
       } else {
         alert("Error");
       }
@@ -91,7 +94,7 @@ const Placeorder = () => {
               <p>Total Amount</p>
               <p>Rs. {gettotal() > 0 ? gettotal() + gettotal() / 20 : 0}</p>
             </div>
-            <button type='submit'>Proceed to payment</button>
+            <button type='submit'>Proceed to payment (Cash on delivery only)</button>
 
           </div>
         </div>

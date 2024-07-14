@@ -28,7 +28,7 @@ const Navbar = ({ setlogin, setsignup }) => {
                 {!token ?
                     <button onClick={() => setlogin(true)} className='log-in'>Log In</button>
                     : <div className='navbar-profile'>
-                        <img src={assets.profile_icon} alt='' />
+                        <p>Profile</p>
                         <ul className="profile">
                             <li onClick={() => { navigate('/userorders') }}>Orders</li>
                             <li onClick={logout}>Logout</li>
