@@ -40,7 +40,6 @@
 ### Front-end :
 - HTML, CSS, JavaScript: The core building blocks of the web interface.
 - React.js : A JavaScript library for building user interfaces.
-- Axios : A promise-based HTTP client for the browser and Node.js.
 
 ### Back-end :
 - JavaScript: The primary programming language for backend development.
@@ -51,6 +50,7 @@
 - MongoDB : A NoSQL database for storing application data.
 
 ### Additional Libraries & Tools :
+- Axios : A promise-based HTTP client for the browser and Node.js.
 - JSON Web Tokens (JWT): For secure user authentication.
 - Mongoose: An Object Data Modeling (ODM) library for MongoDB and Node.js.
 - React Router: For handling navigation in React applications.
