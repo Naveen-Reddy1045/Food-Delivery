@@ -6,12 +6,12 @@
 }
 
 .logoname {
-    display: flex;
+  display: flex;
   width: 150px;
   padding-right: 50px;
   padding-top: 10px;
   font-size: 100px;
-  color: rgb(61,243,5);
+  color: rgb(61, 243, 5);
 }
 
 .nav-bar {
@@ -21,15 +21,18 @@
   align-items: center;
   gap: 20px;
 }
-.navbar-profile{
+
+.navbar-profile {
   position: relative;
 }
-.profile{
+
+.profile {
   position: absolute;
   display: none;
   right: 0;
   z-index: 1;
 }
+
 .navbar-profile:hover .profile {
   display: flex;
   flex-direction: column;
@@ -38,14 +41,14 @@
   list-style: none;
   border: 1px solid violet;
   padding: 12px 20px;
-}z
+}
 
-.profile li{
+z .profile li {
   align-items: center;
   cursor: pointer;
 }
 
-.profile li:hover{
+.profile li:hover {
   color: blue;
 }
 
@@ -71,67 +74,62 @@
   transition: 0.3s;
 }
 
-.log-in:hover{
+.log-in:hover {
   background-color: rgb(64, 255, 0);
 }
 
-.navbar .active{
-    text-decoration: underline rgb(255, 42, 0);
-    background-color: rgb(61, 243, 5);
-    padding: 10px 30px;
-    color: rgb(2, 87, 2);
+.navbar .active {
+  text-decoration: underline rgb(255, 42, 0);
+  background-color: rgb(61, 243, 5);
+  padding: 10px 30px;
+  color: rgb(2, 87, 2);
 }
 
-.navbar .nav-bar div{
-    cursor: pointer;
-    transition: 0.3s;
+.navbar .nav-bar div {
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-@media only screen and (max-width: 1050px) {
-  .nav-bar {
-    flex-wrap: wrap;
-    justify-content: center;
-    font-size: 18px;
-    padding: 15px 10px;
-  }
-  .nav-bar a, .nav-bar Link, .nav-bar button {
-    padding: 8px 16px;
-  }
-  .navbar-profile:hover .profile {
-    padding: 10px 18px;
-  }
-  .log-in {
-    padding: 8px 20px;
-  }
-  .nav-bar .active {
-    padding: 8px 20px;
-  }
-}
 
-@media only screen and (max-width: 800px) {
-  .navbar{
+
+@media only screen and (max-width: 900px) {
+  .navbar {
     display: flex;
     flex-direction: column;
   }
+
   .nav-bar {
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
     padding: 10px 5px;
   }
-  .nav-bar a, .nav-bar Link, .nav-bar button {
+
+  .nav-bar a,
+  .nav-bar Link,
+  .nav-bar button {
     padding: 6px 12px;
-    font-size: 16px;
+    font-size: larger;
   }
+
   .navbar-profile:hover .profile {
     right: auto;
     left: 50%;
     transform: translateX(-50%);
   }
+
   .log-in {
     padding: 6px 12px;
   }
+
   .nav-bar .active {
     padding: 6px 12px;
+    font-size: xx-large;
+  }
+
+  .logoname {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 100px;
   }
 }
