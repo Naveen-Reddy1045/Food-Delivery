@@ -6,10 +6,8 @@
 ## Table of Contents
 - Features
 - Usage
-- API Endpoints
 - Technologies Used
 - Contributing
-- License
 
 
 ### Features
