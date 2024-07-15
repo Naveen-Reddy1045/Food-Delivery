@@ -23,7 +23,7 @@
 
 ### Usage
 - Visit the Website:
-        Open the browser and go to `https://food-delivery-website-client.onrender.com`.
+        Open the browser and go to hosted website `https://food-delivery-website-client.onrender.com`.
 - Register/Login:
         Register: Create a new account by providing your name, email, and password.
         Login: Access your account by entering your registered email and password.
