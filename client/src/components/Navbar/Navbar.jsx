@@ -3,9 +3,8 @@ import './Navbar.css'
 import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { Storecontext } from '../../context/Storecontext'
-import { assets } from '../../assets/assets'
 
-const Navbar = ({ setlogin, setsignup }) => {
+const Navbar = ({ setlogin }) => {
     const [menu, setmenu] = useState("home");
     const { gettotal, token, settoken } = useContext(Storecontext);
     const navigate = useNavigate();
@@ -24,7 +23,7 @@ const Navbar = ({ setlogin, setsignup }) => {
                 <a href='#explore-menu' onClick={() => setmenu("Menu")} className={menu === "Menu" ? "active" : ""}>Menu</a>
                 <a href='#footer' onClick={() => setmenu("aboutus")} className={menu === "aboutus" ? "active" : ""}>About us</a>
                 <Link to='/cart' onClick={() => setmenu("cart")} className={(menu === "cart" ? "active" : "") || (gettotal === 0 ? "" : "dot")}>Cart</Link>
-                {/* <button onClick={()=>setsignup(true)}  className='signup'>Sign Up</button> */}
+                
                 {!token ?
                     <button onClick={() => setlogin(true)} className='log-in'>Log In</button>
                     : <div className='navbar-profile'>
