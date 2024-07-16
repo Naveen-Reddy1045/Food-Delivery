@@ -7,6 +7,7 @@
 - Features
 - Usage
 - Technologies Used
+- Installation
 - Contributing
 
 
