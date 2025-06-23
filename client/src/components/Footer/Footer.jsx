@@ -44,8 +44,9 @@ const Footer = () => {
             <img src={assets.linkedin_icon} alt="" />
           </div>
           <ul>
-            <li>+91 9150995015</li>
-            <li>lokeshreddybolla7917@gmail.com</li>
+            <li>+91 9391802669</li>
+            <li>akiharshith@gmail.com</li>
+            <li>vdnaveenreddy@gmail.com</li>
           </ul>
           
         </div>
